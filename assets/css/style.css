@@ -79,7 +79,7 @@ main {
     border: 2px solid black;
     margin: 0;
 }
-#bio-title::after, #work-title::after, #contact-title::after, .work-content::after {
+#bio-title::after, #work-title::after, #contact-title::after {
     content: '';
     background: black;
     height: 40px;
@@ -92,12 +92,22 @@ main {
 #bio-content {
     border: 2px solid black;
     text-align: center;
-    margin: 38px auto 100px auto;
+    margin: 38px auto 0 auto;
 }
 
-.work-content {
+.work-content, .work-content-last {
     border: 2px solid black;
+    position: relative;
     width: 200px;
     height: 200px;
-    margin: 38px auto 100px auto;
+    margin: 38px auto 0 auto;
+}
+.work-content::after {
+    content: '';
+    background: black;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
 }
