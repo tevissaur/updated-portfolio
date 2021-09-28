@@ -5,27 +5,61 @@
     --ecru: #bcab79ff;
     --beau-blue: #c6e0ffff;
 }
-
+* {
+    scroll-behavior: smooth;
+}
 h1 {
     color: var(--charleston-green);
     font-family: monospace;
     position: absolute;
     z-index: 2;
 }
+body {
+    background: linear-gradient(var(--beau-blue), var(--celadon-blue));
+}
+.shape {
+    position: absolute;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+  }
+  
+  .shape::before {
+    border-radius: 100%;
+    position: absolute;
+    background: var(--ecru);
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    content: '';
+    bottom: 0;
+  }
 
 .main-circle {
     position: relative;
     border: 2px solid black;
     background-color: var(--celadon-blue);
+    top: 20px;
+    z-index: 1;
 }
 .circle {
     position: absolute;
+    display: flex;
     border: 2px solid black;
     background-color: var(--celadon-blue);
     transition: transform 0.5s;
 }
 .circle:hover {
     transform: scale(1.5);
+}
+
+.circle a {
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
 }
 #expand-menu {
     display: none;
@@ -36,33 +70,34 @@ h1 {
     top: 0px;
     transform: rotate(45deg);
 }
-/* 
-#nav-circle-0 {
-    top: -150px;
+main {
+    margin-top: 600px;
 }
 
-#nav-circle-1 {
-    top: 10px;
+#bio-title, #work-title, #contact-title {
+    position: relative;
+    border: 2px solid black;
+    margin: 0;
+}
+#bio-title::after, #work-title::after, #contact-title::after, .work-content::after {
+    content: '';
+    background: black;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
 }
 
-#nav-circle-2 {
-    top: 160px;
+#bio-content {
+    border: 2px solid black;
+    text-align: center;
+    margin: 38px auto 100px auto;
 }
 
-#nav-circle-3 {
-    top: 160px;
-}
-
-#nav-circle-4 {
-    top: 10px;
-} */
-@media screen and (max-width: 425px) {
-    #expand-menu {
-        display: block;
-    }
-    #nav-circle-1, #nav-circle-2,#nav-circle-3,#nav-circle-4 {
-        /* display: none; */
-    }
-
-    
+.work-content {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 38px auto 100px auto;
 }

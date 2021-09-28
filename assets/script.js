@@ -3,15 +3,15 @@ let mainCircle = document.getElementById('nav-circle-0')
 function updateNavBar() {
 
 }
-function distributeFields(deg) {
+function distributeFields(deg, piDiv) {
     deg = deg || 0;
     let radius = 180;
     let circles = document.querySelectorAll('.circle'), //using queryselector instead of $ to select items 
 
         width = mainCircle.offsetWidth;  //offsetWidth gives the width of the container
-        height = mainCircle.offsetHeight;
-        angle = deg || Math.PI * 3.5;
-        step = (Math.PI / 1.4) / circles.length;
+    height = mainCircle.offsetHeight;
+    angle = deg || Math.PI * 3.5;
+    step = (Math.PI / piDiv) / circles.length;
     console.log(width, height, circles)
 
     //using forEach loop on a NodeList instead of a Jquery .each, 
@@ -37,34 +37,37 @@ function drawNavBar(event) {
         navCircle.style.height = `70px`
         navCircle.classList.add('rounded-circle', 'circle')
         navCircle.id = `nav-circle-${i + 1}`
+        let navLink = document.createElement('a')
         switch (navCircle.id) {
             case 'nav-circle-1':
-                
+                navLink.href = '#contact'
+                navCircle.appendChild(navLink)
                 break
             case 'nav-circle-2':
+                navLink.href = '#work'
+                navCircle.appendChild(navLink)
 
                 break
             case 'nav-circle-3':
+                navLink.href = '#bio'
+                navCircle.appendChild(navLink)
 
-                break
-            case 'nav-circle-4':
 
-                break
         }
         mainCircle.appendChild(navCircle)
-        let navLink = document.createElement('a')
 
     }
 }
 
 addEventListener('load', (event) => {
-    if (innerWidth <= 425 ) {
+    if (innerWidth <= 425) {
         console.log(innerWidth)
         drawNavBar(event)
+        distributeFields(1.06, 2);
     } else {
-        
+
         drawNavBar(event)
-        distributeFields(0.8);
+        distributeFields(0.87, 1.45);
     }
 })
 
