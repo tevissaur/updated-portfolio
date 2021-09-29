@@ -14,10 +14,6 @@ let slideUp = {
 
 ScrollReveal().reveal(sections, slideUp);
 
-
-function updateNavBar() {
-
-}
 function distributeFields(deg, piDiv) {
     deg = deg || 0;
     let radius = 180;
@@ -43,36 +39,36 @@ function distributeFields(deg, piDiv) {
     })
 }
 
-function drawNavBar(event) {
-    mainCircle.style.width = `250px`
-    mainCircle.style.height = `250px`
-    for (let i = 0; i < 3; i++) {
-        let navCircle = document.createElement('div')
-        navCircle.style.width = `70px`
-        navCircle.style.height = `70px`
-        navCircle.classList.add('rounded-circle', 'circle')
-        navCircle.id = `nav-circle-${i + 1}`
-        let navLink = document.createElement('a')
-        switch (navCircle.id) {
-            case 'nav-circle-1':
-                navLink.href = '#contact'
-                navCircle.appendChild(navLink)
-                break
-            case 'nav-circle-2':
-                navLink.href = '#work'
-                navCircle.appendChild(navLink)
+// function drawNavBar(event) {
+//     mainCircle.style.width = `250px`
+//     mainCircle.style.height = `250px`
+//     for (let i = 0; i < 3; i++) {
+//         let navCircle = document.createElement('div')
+//         navCircle.style.width = `70px`
+//         navCircle.style.height = `70px`
+//         navCircle.classList.add('rounded-circle', 'circle')
+//         navCircle.id = `nav-circle-${i + 1}`
+//         let navLink = document.createElement('a')
+//         switch (navCircle.id) {
+//             case 'nav-circle-1':
+//                 navLink.href = '#contact'
+//                 navCircle.appendChild(navLink)
+//                 break
+//             case 'nav-circle-2':
+//                 navLink.href = '#work'
+//                 navCircle.appendChild(navLink)
 
-                break
-            case 'nav-circle-3':
-                navLink.href = '#bio'
-                navCircle.appendChild(navLink)
+//                 break
+//             case 'nav-circle-3':
+//                 navLink.href = '#bio'
+//                 navCircle.appendChild(navLink)
 
 
-        }
-        mainCircle.appendChild(navCircle)
+//         }
+//         mainCircle.appendChild(navCircle)
 
-    }
-}
+//     }
+// }
 
 addEventListener('load', (event) => {
     // if (innerWidth <= 425) {

@@ -54,21 +54,23 @@ body {
 }
 
 .main-circle {
-    position: relative;
+    width: 250px;
+    height: 250px;
     border: 3px ridge var(--ruby-red);
     background-image: url('../images/lion.svg');
     background-position: center;
     background-size: cover;
     box-shadow: 0px 0px 100px var(--gamboge), 50px 50px 100px var(--peach-orange), -50px 50px 100px var(--peach-orange);
-    top: 20px;
     z-index: 1;
 }
 
 .circle {
-    position: absolute;
     display: flex;
+    width: 70px;
+    height: 70px;
     border: 2px solid black;
     background-color: var(--celadon-blue);
+    z-index: 1;
     transition: transform 0.5s;
 }
 
