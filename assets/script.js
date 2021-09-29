@@ -1,4 +1,19 @@
+
+
 let mainCircle = document.getElementById('nav-circle-0')
+let sections = document.querySelectorAll('.row');
+
+let slideUp = {
+    opacity: 0,
+    delay: 100,
+    duration: 500,
+    reset: true
+};
+
+
+
+ScrollReveal().reveal(sections, slideUp);
+
 
 function updateNavBar() {
 
@@ -75,13 +90,13 @@ addEventListener('load', (event) => {
 
 
 
-addEventListener('wheel', (e) => {
-    console.log(e.deltaY)
-    if (e.deltaY < 0) {
-        console.log('scroll up')
-        console.log(innerWidth)
-    } else {
-        console.log('scroll down')
-        console.log(innerHeight)
-    }
-})
+// addEventListener('wheel', (e) => {
+//     console.log(e.deltaY)
+//     if (e.deltaY < 0) {
+//         console.log('scroll up')
+//         console.log(innerWidth)
+//     } else {
+//         console.log('scroll down')
+//         console.log(innerHeight)
+//     }
+// })
