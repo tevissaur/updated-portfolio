@@ -7,6 +7,9 @@ let slideUp = {
     opacity: 0,
     delay: 100,
     duration: 500,
+    origin: 'bottom',
+    distance: '20px',
+    easing: 'ease-in',
     reset: true
 };
 
@@ -14,30 +17,30 @@ let slideUp = {
 
 ScrollReveal().reveal(sections, slideUp);
 
-function distributeFields(deg, piDiv) {
-    deg = deg || 0;
-    let radius = 180;
-    let circles = document.querySelectorAll('.circle'), //using queryselector instead of $ to select items 
+// function distributeFields(deg, piDiv) {
+//     deg = deg || 0;
+//     let radius = 180;
+//     let circles = document.querySelectorAll('.circle'), //using queryselector instead of $ to select items 
 
-        width = mainCircle.offsetWidth;  //offsetWidth gives the width of the container
-    height = mainCircle.offsetHeight;
-    angle = deg || Math.PI * 3.5;
-    step = (Math.PI / piDiv) / circles.length;
-    console.log(width, height, circles)
+//         width = mainCircle.offsetWidth;  //offsetWidth gives the width of the container
+//     height = mainCircle.offsetHeight;
+//     angle = deg || Math.PI * 3.5;
+//     step = (Math.PI / piDiv) / circles.length;
+//     console.log(width, height, circles)
 
-    //using forEach loop on a NodeList instead of a Jquery .each, 
-    //so we can now use "field" as an iterator instead of $(this)
+//     //using forEach loop on a NodeList instead of a Jquery .each, 
+//     //so we can now use "field" as an iterator instead of $(this)
 
-    circles.forEach((circle) => {
-        let x = Math.round(width / 2 + radius * Math.cos(angle) - circle.offsetHeight / 2);
-        let y = Math.round(height / 2 + radius * Math.sin(angle) - circle.offsetWidth / 2);
-        console.log(x, y)
-        circle.style.left = x + 'px';  //adding inline style to the document (field)
-        circle.style.top = y + 'px';
+//     circles.forEach((circle) => {
+//         let x = Math.round(width / 2 + radius * Math.cos(angle) - circle.offsetHeight / 2);
+//         let y = Math.round(height / 2 + radius * Math.sin(angle) - circle.offsetWidth / 2);
+//         console.log(x, y)
+//         circle.style.left = x + 'px';  //adding inline style to the document (field)
+//         circle.style.top = y + 'px';
 
-        angle += step;
-    })
-}
+//         angle += step;
+//     })
+// }
 
 // function drawNavBar(event) {
 //     mainCircle.style.width = `250px`
@@ -70,7 +73,7 @@ function distributeFields(deg, piDiv) {
 //     }
 // }
 
-addEventListener('load', (event) => {
+// addEventListener('load', (event) => {
     // if (innerWidth <= 425) {
     //     console.log(innerWidth)
     //     drawNavBar(event)
@@ -80,9 +83,9 @@ addEventListener('load', (event) => {
     //     drawNavBar(event)
     //     distributeFields(0.87, 1.45);
     // }
-        drawNavBar(event)
-        distributeFields(0.86, 1.45);
-})
+        // drawNavBar(event)
+        // distributeFields(0.86, 1.45);
+// })
 
 
 

@@ -39,7 +39,7 @@ body {
     
 }
 
-.shape::before {
+.shape::after {
     border-radius: 100%;
     position: absolute;
     background: var(--mahogany);
@@ -47,7 +47,7 @@ body {
     left: -200px;
     top: -200px;
     content: '';
-    bottom: 0;
+    bottom: 50px;
     background: radial-gradient(var(--alloy-orange), var(--mahogany));
     /* background: linear-gradient(var(--middle-blue-green), var(--blue-sapphire)); */
 
@@ -75,6 +75,7 @@ body {
 }
 #link-container {
     height: 100px;
+    
 }
 #nav-circle-1 {
     align-self: baseline;
@@ -99,17 +100,17 @@ body {
 }
 
 #expand-menu {
-    display: none;
+    display: block;
     position: absolute;
     font-size: 2em;
     cursor: pointer;
-    right: 10px;
+    right: 20px;
     top: 0px;
     transform: rotate(45deg);
 }
 
 main {
-    margin-top: 600px;
+    margin-top: 70vh!important;
 }
 
 #bio-title, #work-title, #contact-title {
@@ -144,13 +145,17 @@ main {
     text-align: center;
     margin: 38px auto 0 auto;
 }
-
+.work-container {
+    position: relative;
+}
 .work-content, .work-content-last {
     border: 2px solid black;
+    background: black;
     position: relative;
     width: 200px;
     height: 200px;
     margin: 38px auto 0 auto;
+    transform: all 0.5s;
 }
 
 .work-content::after {
@@ -161,4 +166,24 @@ main {
     position: absolute;
     top: 101%;
     width: 1px;
+}
+
+@media screen and (min-width: 768px) {
+    .work-content::after {
+        display: none;
+    }
+    #work-shape {
+        width: 70%;
+        height: 1px;
+        left: 15%;
+        top: 50%;
+        background: black;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .work-content, .work-content-last {
+        width: 300px;
+        height: 300px;
+    }
 }

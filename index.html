@@ -20,19 +20,25 @@
             <div class="rounded-circle main-circle mt-3 mb-2" id="nav-circle-0"></div>
 
         </div>
-        <div class="container justify-content-center col-12 col-lg-4" id="link-container">
-            <div class="rounded-circle circle ms-2 me-2" id="nav-circle-1"><a href="#contact"></a></div>
-            <div class="rounded-circle circle ms-2 me-2" id="nav-circle-2"><a href="#work"></a></div>
-            <div class="rounded-circle circle ms-2 me-2" id="nav-circle-3"><a href="#bio"></a></div>
+        <div class="container justify-content-center col-12 col-lg-8" id="link-container">
+            <div class="rounded-circle circle mx-2 mx-md-3" id="nav-circle-1">
+                <a href="#contact"></a>
+            </div>
+            <div class="rounded-circle circle mx-2 mx-md-3" id="nav-circle-2">
+                <a href="#work"></a>
+            </div>
+            <div class="rounded-circle circle mx-2 mx-md-3" id="nav-circle-3">
+                <a href="#bio"></a>
+            </div>
         </div>
         <div class="shape"></div>
-        <!-- <div id="expand-menu">&#8616;</div> -->
+        <div id="expand-menu">&#8616;</div>
     </nav>
 
-    <main class="container justify-content-center">
+    <main class="row justify-content-center mx-0">
         <section class="row justify-content-center mt-5" id="bio">
             <div class="text-center col-12 row justify-content-center">
-                <h2 class="rounded-3 text-center col-5 col-lg-3 p-2 h3" id="bio-title">
+                <h2 class="rounded-3 text-center col-3 col-lg-2 p-2 h3" id="bio-title">
                     about me
                 </h2>
 
@@ -46,30 +52,33 @@
         </section>
         <section class="row justify-content-center mt-5" id="work">
             <div class="text-center col-12 row justify-content-center">
-                <h3 class="rounded-3 col-5 col-lg-3 p-2 h3" id="work-title">
+                <h3 class="rounded-3 col-4 col-lg-2 p-2 h3" id="work-title">
                     my work
                 </h3>
             </div>
-            <div class="row work-container">
-                <div class=" rounded-circle work-content" id="work-net-grill">
+            <section class="row flex-md-row flex-column work-container">
+                <section class="position-absolute" id="work-shape">
 
-                </div>
-                <div class="rounded-circle work-content" id="work-forene">
+                </section>
+                <section class=" rounded-circle work-content" id="work-net-grill">
 
-                </div>
-                <div class="rounded-circle work-content-last mb-5" id="work-ttt">
+                </section>
+                <section class="rounded-circle work-content" id="work-forene">
 
-                </div>
+                </section>
+                <section class="rounded-circle work-content-last mb-5" id="work-ttt">
+
+                </section>
             </div>
         </section>
         <section class="row justify-content-center mt-5" id="contact">
             <div class="text-center col-12 row justify-content-center">
-                <h4 class="rounded-3 text-center col-5 col-lg-3 p-2 h3" id="contact-title">
+                <h4 class="rounded-3 text-center col-4 col-lg-2 p-2 h3" id="contact-title">
                     contact me
                 </h4>
 
             </div>
-            <div class="col-10 rounded-3 text-start" id="contact-form-container">
+            <div class="col-10 col-lg-6 rounded-3 text-start" id="contact-form-container">
                 <form class="pt-2 pb-5" action="mailto:tevisreilly1@gmail.com" method="GET">
                     <label class="p-2" for="sender-name">
                         Your name:
