@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,10 @@
   "homepage": "https://github.com/tevissaur/updated-portfolio#readme",
   "dependencies": {
     "bootstrap": "^5.1.1",
+    "jest": "^27.2.4",
     "scrollreveal": "^4.0.9"
   },
-  "typeAcquisition": {
-    "include": [
-      "bootstrap"
-    ]
+  "devDependencies": {
+    "@types/jest": "^27.0.2"
   }
 }

@@ -1,7 +1,7 @@
 
 
 let mainCircle = document.getElementById('nav-circle-0')
-let sections = document.querySelectorAll('.row');
+let sections = document.querySelectorAll('section');
 
 let slideUp = {
     opacity: 0,
@@ -75,15 +75,17 @@ function drawNavBar(event) {
 }
 
 addEventListener('load', (event) => {
-    if (innerWidth <= 425) {
-        console.log(innerWidth)
-        drawNavBar(event)
-        distributeFields(1.06, 2);
-    } else {
+    // if (innerWidth <= 425) {
+    //     console.log(innerWidth)
+    //     drawNavBar(event)
+    //     distributeFields(1.06, 2);
+    // } else {
 
+    //     drawNavBar(event)
+    //     distributeFields(0.87, 1.45);
+    // }
         drawNavBar(event)
-        distributeFields(0.87, 1.45);
-    }
+        distributeFields(0.86, 1.45);
 })
 
 
