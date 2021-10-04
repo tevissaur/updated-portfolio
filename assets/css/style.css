@@ -15,6 +15,9 @@
     --mahogany: #bb3e03ff;
     --rufous: #ae2012ff;
     --ruby-red: #9b2226ff;
+
+    --content-background-color: rgba(128, 204, 255, 0.575);
+
 }
 
 * {
@@ -28,6 +31,9 @@ h1 {
 }
 
 body {
+    /* background-image: url('../images/pexels-bruno-scramgnon-585759.jpg');
+    background-position: top;
+    background-size: cover; */
     background: linear-gradient(var(--gamboge), var(--peach-orange),var(--beau-blue), var(--celadon-blue));
 }
 
@@ -110,19 +116,18 @@ body {
 }
 
 main {
-    margin-top: 70vh!important;
+    margin-top: 60vh!important;
 }
+
+
 
 #bio-title, #work-title, #contact-title {
     position: relative;
     border: 2px solid black;
+    background-color: var(--content-background-color);
     margin: 0;
 }
-#bio-title, #work-title, #contact-title {
-    position: relative;
-    border: 2px solid black;
-    margin: 0;
-}
+
 
 #bio-title::after, #work-title::after, #contact-title::after {
     content: '';
@@ -138,10 +143,13 @@ main {
     border: 2px solid black;
     text-align: center;
     margin: 38px auto 0 auto;
+    background-color: var(--content-background-color);
+
 }
 
 #contact-form-container {
     border: 2px solid black;
+    background-color: var(--content-background-color);
     text-align: center;
     margin: 38px auto 0 auto;
 }
@@ -150,12 +158,16 @@ main {
 }
 .work-content, .work-content-last {
     border: 2px solid black;
-    background: black;
     position: relative;
     width: 200px;
     height: 200px;
     margin: 38px auto 0 auto;
-    transform: all 0.5s;
+    transition: all 0.5s;
+}
+
+.work-content:hover, .work-content-last:hover {
+    z-index: 999;
+    transform: scale(1.3);
 }
 
 .work-content::after {
@@ -166,7 +178,36 @@ main {
     position: absolute;
     top: 101%;
     width: 1px;
+    transition:all 1s;
 }
+
+.work-content:hover .work-content::after {
+    opacity: 0;
+    width: 0;
+}
+.work-content::after:hover {
+    opacity: 0;
+}
+
+
+#work-net-grill {
+    background-image: url('../images/Logo.png');
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+#work-forene {
+    background-image: url('../images/Forene.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#work-ttt {
+    background-image: url('../images/tictactoe.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 @media screen and (min-width: 768px) {
     .work-content::after {
