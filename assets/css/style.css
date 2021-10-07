@@ -16,7 +16,7 @@
     --rufous: #ae2012ff;
     --ruby-red: #9b2226ff;
 
-    --content-background-color: rgba(128, 204, 255, 0.575);
+    --content-background-color: rgb(167, 220, 255);
 
 }
 
@@ -116,7 +116,7 @@ body {
 }
 
 main {
-    margin-top: 60vh!important;
+    margin-top: 20vh!important;
 }
 
 
@@ -129,13 +129,41 @@ main {
 }
 
 
-#bio-title::after, #work-title::after, #contact-title::after {
+#bio-title::after {
     content: '';
     background: black;
-    height: 40px;
+    height: 50px;
     left: 50%;
     position: absolute;
     top: 101%;
+    width: 1px;
+}
+#work-title::after {
+    content: '';
+    background: black;
+    height: 50px;
+    left: 50%;
+    position: absolute;
+    top: 101%;
+    width: 1px;
+}
+#contact-title::after {
+    content: '';
+    background: black;
+    height: 51px;
+    left: 50%;
+    position: absolute;
+    top: 101%;
+    width: 1px;
+}
+#bio-pic::after {
+    content: '';
+    background: black;
+    height: 58px;
+    left: 50%;
+    position: absolute;
+    top: 116%;
+    z-index: -1;
     width: 1px;
 }
 
@@ -145,6 +173,15 @@ main {
     margin: 38px auto 0 auto;
     background-color: var(--content-background-color);
 
+}
+
+#bio-pic {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    background-image: url('../images/20210523_142916.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 #contact-form-container {
@@ -209,7 +246,7 @@ main {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .work-content::after {
         display: none;
     }
@@ -219,6 +256,34 @@ main {
         left: 15%;
         top: 50%;
         background: black;
+    }
+}
+@media screen and (max-width: 768px) {
+    .work-content::after {
+        display: none;
+    }
+    #work-shape {
+        width: 1px;
+        height: 70%;
+        left: 50%;
+        top: 15%;
+        padding: 0;
+        background: black;
+    }
+    #bio-pic {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    #bio-pic::after {
+    
+        content: '';
+        background: black;
+        height: 50px;
+        left: 50%;
+        position: absolute;
+        top: 100%;
+        width: 1px;
     }
 }
 

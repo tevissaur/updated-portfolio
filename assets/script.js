@@ -8,19 +8,12 @@ console.log(works)
 
 let slideUp = {
     opacity: 0,
-    delay: 100,
+    delay: 50,
     duration: 500,
     reset: true
 };
 
-for (let work of works) {
-    work.style.transform = 
-    work.style.transition += 'all ease-in 0.5s'
-    work.addEventListener('mouseover', (e) => {
-        console.log(e.target)
-        e.target.classList.toggle('.work-content .work-content-hidden-after')
-    })
-}
+
 
 
 
