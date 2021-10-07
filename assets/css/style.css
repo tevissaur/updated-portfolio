@@ -31,10 +31,10 @@ h1 {
 }
 
 body {
-    /* background-image: url('../images/pexels-bruno-scramgnon-585759.jpg');
+    background-image: url('../images/pexels-bruno-scramgnon-585759.jpg');
     background-position: top;
-    background-size: cover; */
-    background: linear-gradient(var(--gamboge), var(--peach-orange),var(--beau-blue), var(--celadon-blue));
+    background-size: cover;
+    /* background: linear-gradient(var(--gamboge), var(--peach-orange),var(--beau-blue), var(--celadon-blue)); */
 }
 
 .shape {
@@ -48,14 +48,12 @@ body {
 .shape::after {
     border-radius: 100%;
     position: absolute;
-    background: var(--mahogany);
     right: -200px;
     left: -200px;
     top: -200px;
     content: '';
     bottom: 50px;
-    background: radial-gradient(var(--alloy-orange), var(--mahogany));
-    /* background: linear-gradient(var(--middle-blue-green), var(--blue-sapphire)); */
+    background: radial-gradient(var(--gamboge), var(--alloy-orange), var(--rufous), var(--ruby-red));
 
 }
 
@@ -156,13 +154,13 @@ main {
     top: 101%;
     width: 1px;
 }
-#bio-pic::after {
+#bio-content::before {
     content: '';
     background: black;
     height: 58px;
     left: 50%;
     position: absolute;
-    top: 116%;
+    bottom: 100%;
     z-index: -1;
     width: 1px;
 }
@@ -172,7 +170,7 @@ main {
     text-align: center;
     margin: 38px auto 0 auto;
     background-color: var(--content-background-color);
-
+    position: relative;
 }
 
 #bio-pic {
@@ -246,7 +244,7 @@ main {
 
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .work-content::after {
         display: none;
     }
@@ -258,7 +256,7 @@ main {
         background: black;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .work-content::after {
         display: none;
     }
@@ -272,11 +270,10 @@ main {
     }
     #bio-pic {
         position: relative;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
-    #bio-pic::after {
-    
+    /* #bio-pic::after {
         content: '';
         background: black;
         height: 50px;
@@ -284,7 +281,8 @@ main {
         position: absolute;
         top: 100%;
         width: 1px;
-    }
+    } */
+
 }
 
 @media screen and (min-width: 1024px) {
