@@ -3,8 +3,17 @@
 let mainCircle = document.getElementById('nav-circle-0')
 let sections = document.querySelectorAll('section');
 let works = document.querySelectorAll('.work-container>*')
+let navCircles = document.querySelectorAll('.circle')
+let firstNavCircle = document.getElementById('nav-circle-1')
+let middleNavCircle = document.getElementById('nav-circle-2')
+let lastNavCircle = document.getElementById('nav-circle-3')
+let aboutText = document.getElementById('about-text')
+let workText = document.getElementById('work-text')
+let contactText = document.getElementById('contact-text')
+let navText = document.querySelectorAll('.link-text')
 
-console.log(works)
+
+console.log(navCircles)
 
 let slideUp = {
     opacity: 0,
@@ -12,6 +21,29 @@ let slideUp = {
     duration: 500,
     reset: true
 };
+
+firstNavCircle.addEventListener('mouseenter', event => {
+    aboutText.classList.toggle('hidden')
+})
+firstNavCircle.addEventListener('mouseleave', event => {
+    aboutText.classList.toggle('hidden')
+})
+
+middleNavCircle.addEventListener('mouseover', event => {
+    workText.classList.toggle('hidden')
+})
+middleNavCircle.addEventListener('mouseleave', event => {
+    workText.classList.toggle('hidden')
+
+})
+
+lastNavCircle.addEventListener('mouseover', event => {
+    contactText.classList.toggle('hidden')
+})
+
+lastNavCircle.addEventListener('mouseleave', event => {
+    contactText.classList.toggle('hidden')
+})
 
 
 
