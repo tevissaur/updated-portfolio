@@ -22,28 +22,28 @@ let slideUp = {
     reset: true
 };
 
-firstNavCircle.addEventListener('mouseenter', event => {
-    aboutText.classList.toggle('hidden')
-})
-firstNavCircle.addEventListener('mouseleave', event => {
-    aboutText.classList.toggle('hidden')
-})
+// firstNavCircle.addEventListener('mouseenter', event => {
+//     aboutText.classList.remove('hidden')
+// })
+// firstNavCircle.addEventListener('mouseleave', event => {
+//     aboutText.classList.add('hidden')
+// })
 
-middleNavCircle.addEventListener('mouseover', event => {
-    workText.classList.toggle('hidden')
-})
-middleNavCircle.addEventListener('mouseleave', event => {
-    workText.classList.toggle('hidden')
+// middleNavCircle.addEventListener('mouseover', event => {
+//     workText.classList.remove('hidden')
+// })
+// middleNavCircle.addEventListener('mouseleave', event => {
+//     workText.classList.add('hidden')
 
-})
+// })
 
-lastNavCircle.addEventListener('mouseover', event => {
-    contactText.classList.toggle('hidden')
-})
+// lastNavCircle.addEventListener('mouseover', event => {
+//     contactText.classList.remove('hidden')
+// })
 
-lastNavCircle.addEventListener('mouseleave', event => {
-    contactText.classList.toggle('hidden')
-})
+// lastNavCircle.addEventListener('mouseleave', event => {
+//     contactText.classList.add('hidden')
+// })
 
 
 
