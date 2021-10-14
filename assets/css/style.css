@@ -32,14 +32,14 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background-image: url('../images/pexels-bruno-scramgnon-585759.jpg');
-    background-position: top;
+    /* background-image: url('../images/pexels-bruno-scramgnon-585759.jpg'); */
+    /* background-position: top; */
     background-size: cover;
-    /* background: linear-gradient(var(--gamboge), var(--peach-orange),var(--beau-blue), var(--celadon-blue)); */
+    background: linear-gradient(var(--gamboge), var(--peach-orange),var(--beau-blue), var(--celadon-blue));
 }
 
 main {
-    margin-top: 58vh!important;
+    margin-top: 10vh!important;
 }
 
 .shape {
@@ -72,19 +72,27 @@ main {
 }
 
 .circle {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border: 2px solid black;
-    background-color: var(--celadon-blue);
+    /* text-shadow: 0 0 5px rgba(85, 85, 85, 0.445); */
+    /* background-image: url('../images/link-image.svg');
+    background-position: center;
+    background-size: cover; */
+    background-color: var(--beau-blue);
     text-decoration: none;
-    color: black;
+    color: var(--charleston-green);
+    vertical-align: middle;
+    font-family: 'Gideon Roman', cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
     z-index: 1;
-    /* transform: scale(1); */
     transition: all 0.5s ease-out;
 }
 
 #link-container {
     height: 100px;
+    gap: 15px;
 }
 
 #nav-circle-1 {
@@ -100,22 +108,61 @@ main {
 }
 
 .circle:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
     z-index: 999;
+    color: black;
+    font-size: 2rem;
 }
-/* #bio-link {
-    align-self: flex-start;
-} */
 
 .link-text {
-    position: absolute;
-    padding: 0;
-    top: 150%;
-    width: fit-content;
-    margin: auto;
-    font-size: 2rem;
-    z-index: 9999;
-    transition: all 1s;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-out;
+}
+.circle:hover .link-text {
+    transform: scale(1.8);
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    /* Full height */
+    height: 50%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Images used */
+
+.img1 {
+    height: 25%;
+}
+
+.img2 {
+    background-image: url("../images/pexels-bruno-scramgnon-585759.jpg");
+    height: 25%;
+}
+
+.img3 {
+    background-image: url("img_lights.jpg");
+}
+
+.img4 {
+    background-image: url("img_nature.jpg");
+}
+
+.img5 {
+    background-image: url("img_forest.jpg");
+}
+
+.img6 {
+    background-image: url("img_woods.jpg");
 }
 
 .hidden {
@@ -186,6 +233,7 @@ main {
     border: 2px solid black;
     text-align: center;
     margin: 38px auto 0 auto;
+    font-size: 1.2rem;
     background-color: var(--content-background-color);
     position: relative;
 }
@@ -198,6 +246,28 @@ main {
     background-size: cover;
     background-position: center;
 }
+
+/* .nasa {
+
+}
+
+.sunset {
+
+}
+
+#prev, #next {
+    position: absolute;
+    cursor: pointer;
+    filter: contrast(2);
+    top: 40%;
+    font-size: 2rem;
+}
+#prev {
+    left: 5px;
+}
+#next {
+    right: 5px;
+} */
 
 #contact-form-container {
     border: 2px solid black;
@@ -293,9 +363,12 @@ main {
         width: 250px;
         height: 250px;
     }
+    #link-container {
+        gap: 0;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .work-content, .work-content-last {
         width: 300px;
         height: 300px;

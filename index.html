@@ -7,12 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/test.css">
     <title>Tevis Reilly</title>
 </head>
 
 <body>
+    <!-- <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div> -->
     <nav class="navbar justify-content-center p-0">
         <div class="container col-12 justify-content-center">
             <div class="rounded-circle main-circle mt-3 mb-2" id="nav-circle-0"></div>
@@ -21,59 +32,77 @@
         <div class="container justify-content-center col-12 col-lg-8" id="link-container">
             <!-- <div class="rounded-circle circle mx-2" id="nav-circle-1">
             </div> -->
-            <a href="#bio" class="text-center rounded-circle circle mx-2 py-2" id="nav-circle-1">about me</a>
-            <a href="#work" class="text-center rounded-circle circle mx-2 m-0 py-3" id="nav-circle-2">my work</a>
-            <a href="#contact" class="text-center rounded-circle circle mx-2 m-0 py-2" id="nav-circle-3">contact me</a>
+            <a href="#bio" class="text-center rounded-circle circle mx-2 pt-4" id="nav-circle-1">
+                <i class="bi-person-circle link-text"></i>
+            </a>
+            <a href="#work" class="text-center rounded-circle circle mx-2 m-0 pt-4" id="nav-circle-2">
+                <i class="bi-person-circle link-text"></i>
+            </a>
+            <a href="#contact" class="text-center rounded-circle circle mx-2 m-0 pt-4" id="nav-circle-3">
+                <i class="bi-person-circle link-text"></i>
+            </a>
 
         </div>
         <div class="shape"></div>
         <!-- <div id="expand-menu">&#8616;</div> -->
     </nav>
-
     <main class="row justify-content-center mx-0">
 
+        <div class="myCarousel">
+            <figure>
+                <img src="./assets/images/CSS3_logo.svg" alt="">
+                <img src="./assets/images/HTML5_Badge.svg" alt="">
+                <img src="./assets/images/Node.js_logo.svg" alt="">
+                <img src="./assets/images/js_logo.svg" alt="">
+                <img src="./assets/images/Python-logo-notext.svg" alt="">
+                <img src="./assets/images/MySQL_textlogo.svg" alt="">
+            </figure>
+            <nav>
+                <button class="nav prev">Prev</button>
+                <button class="nav next">Next</button>
+            </nav>
+        </div>
         <section class="row justify-content-center mt-5" id="bio">
             <div class="text-center col-12 row justify-content-center">
-                <h2 class="rounded-3 text-center col-5 col-md-4 col-lg-2 p-2 h3" id="bio-title">
+                <h2 class="rounded-3 text-center col-5 col-md-4 col-lg-2 p-2 h1" id="bio-title">
                     about me
                 </h2>
             </div>
             <div class="col-12 justify-content-center">
                 <div class="rounded-circle col-5 m-auto mt-5" id="bio-pic"></div>
-                <!-- <img src="./assets/images/20210523_142916.jpg" class="rounded-circle col-5 " alt=""> -->
-            </div>
-            <p class="col-10 col-lg-5 rounded-3 p-3 my-5" id="bio-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quos, provident voluptas deleniti
-                dicta laborum iusto doloremque ratione possimus incidunt est? Esse non aliquid nemo. Ipsa accusantium
-                obcaecati quae? Adipisci!
-            </p>
+                
+                <p class="col-10 col-lg-5 rounded-3 p-3 my-5" id="bio-content">
+                    I am currently a student of web development. I have made a few things with HTML and CSS, and am
+                        just now working my way into JS. I enjoy playing with colors and layouts, and creating visually
+                        appealing websites. I enjoy the outdoors, Dungeons and Dragons, and video games. I let these interests inspire my design choices, and my project choices.
+                </p>
 
 
         </section>
         <section class="row justify-content-center mt-5" id="work">
             <div class="text-center col-12 row justify-content-center">
-                <h3 class="rounded-3 col-5 col-md-4 col-lg-2 p-2 h3" id="work-title">
+                <h3 class="rounded-3 col-5 col-md-4 col-lg-2 p-2 h1" id="work-title">
                     my work
                 </h3>
             </div>
             <section class="row flex-md-row flex-column work-container">
-                <section class="position-absolute" id="work-shape">
+                <div class="position-absolute" id="work-shape">
 
-                </section>
-                <section class="rounded-circle work-content" id="work-net-grill">
+                </div>
+                <div class="rounded-circle work-content" id="work-net-grill">
 
-                </section>
-                <section class="rounded-circle work-content" id="work-forene">
+                </div>
+                <div class="rounded-circle work-content" id="work-forene">
 
-                </section>
-                <section class="rounded-circle work-content-last mb-5" id="work-ttt">
+                </div>
+                <div class="rounded-circle work-content-last mb-5" id="work-ttt">
 
-                </section>
+                </div>
                 </div>
             </section>
             <section class="row justify-content-center mt-5" id="contact">
                 <div class="text-center col-12 row justify-content-center">
-                    <h4 class="rounded-3 text-center col-5 col-md-4 col-lg-2 p-2 h3" id="contact-title">
+                    <h4 class="rounded-3 text-center col-5 col-md-4 col-lg-2 p-2 h1" id="contact-title">
                         contact me
                     </h4>
 
@@ -97,7 +126,10 @@
     <footer class="container justify-content-center mt-5 mb-5">
         <h6 class="text-center p-0">Made with love by Tevis Reilly</h6>
     </footer>
-
+    <!-- JavaScript Bundle with Popper
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> -->
     <script src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>

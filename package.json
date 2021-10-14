@@ -20,6 +20,7 @@
   "homepage": "https://github.com/tevissaur/updated-portfolio#readme",
   "dependencies": {
     "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.6.0",
     "jest": "^27.2.4",
     "scrollreveal": "^4.0.9"
   },

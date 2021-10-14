@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myCarousel {
+  padding: 20px;
+  margin-bottom: 10vh;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myCarousel > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.myCarousel figure {
+  margin: 0;
+  width: 300px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 50% 50% -482.84271px;
+          transform-origin: 50% 50% -482.84271px;
+}
+
+.myCarousel figure img {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 15px;
+  background-color: wheat;
+}
+
+.myCarousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform-origin: 50% 50% -482.84271px;
+          transform-origin: 50% 50% -482.84271px;
+}
+
+.myCarousel figure img:nth-child(2) {
+  -webkit-transform: rotateY(1.0472rad);
+          transform: rotateY(1.0472rad);
+}
+
+.myCarousel figure img:nth-child(3) {
+  -webkit-transform: rotateY(2.0944rad);
+          transform: rotateY(2.0944rad);
+}
+
+.myCarousel figure img:nth-child(4) {
+  -webkit-transform: rotateY(3.14159rad);
+          transform: rotateY(3.14159rad);
+}
+
+.myCarousel figure img:nth-child(5) {
+  -webkit-transform: rotateY(4.18879rad);
+          transform: rotateY(4.18879rad);
+}
+
+.myCarousel figure img:nth-child(6) {
+  -webkit-transform: rotateY(5.23599rad);
+          transform: rotateY(5.23599rad);
+}
+
+.myCarousel nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 0;
+}
+
+.myCarousel nav button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=test.css.map */

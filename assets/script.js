@@ -12,15 +12,45 @@ let workText = document.getElementById('work-text')
 let contactText = document.getElementById('contact-text')
 let navText = document.querySelectorAll('.link-text')
 
+var
+  carousel = document.querySelector('.myCarousel'),
+  figure = carousel.querySelector('figure'),
+  nav = carousel.querySelector('nav'),
+  numImages = figure.childElementCount,
+  theta =  2 * Math.PI / numImages,
+  currImage = 0
+;
+  
+nav.addEventListener('click', onClick, true);
 
-console.log(navCircles)
-
+function onClick(e) {
+  e.stopPropagation();
+  
+  var t = e.target;
+  if (t.tagName.toUpperCase() != 'BUTTON')
+    return;
+  
+  if (t.classList.contains('next')) {
+    currImage++;
+  }
+  else {
+    currImage--;
+  }
+  
+  figure.style.transform = `rotateY(${currImage * -theta}rad)`;
+}
 let slideUp = {
     opacity: 0,
     delay: 50,
-    duration: 500,
+    duration: 700,
     reset: true
 };
+
+ScrollReveal().reveal(sections, slideUp);
+
+
+
+
 
 // firstNavCircle.addEventListener('mouseenter', event => {
 //     aboutText.classList.remove('hidden')
@@ -50,7 +80,7 @@ let slideUp = {
 
 
 
-ScrollReveal().reveal(sections, slideUp);
+
 
 // function distributeFields(deg, piDiv) {
 //     deg = deg || 0;
