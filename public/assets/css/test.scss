@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
 body {
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Gideon Roman", monospace;
   font-size: 16px;
 
   display: flex;
@@ -12,12 +13,13 @@ body {
 // Carousel configuration parameters
 $n: 6;
 $item-width: 300px;
-$item-separation: 30px;
-$viewer-distance: 400px;
+$item-separation: 50px;
+$viewer-distance: 1000px;
 
 // Derived variables
 $theta: 2 * 3.141592653589793 / $n;
 $apothem: 482.842712474619px;
+
 
 .myCarousel {
   padding: 20px;
