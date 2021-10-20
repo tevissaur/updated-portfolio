@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
@@ -19,15 +19,20 @@
 </head>
 
 <body>
-    <!-- <div class="bg-image img1"></div>
-    <div class="bg-image img2"></div>
-    <div class="bg-image img3"></div>
-    <div class="bg-image img4"></div>
-    <div class="bg-image img5"></div>
-    <div class="bg-image img6"></div> -->
+
     <nav class="navbar justify-content-center p-0">
-        <div class="container col-12 justify-content-center">
-            <div class="rounded-circle main-circle mt-3 mb-2" id="nav-circle-0"></div>
+        <div class="container col-12 justify-content-around">
+            <a href="https://github.com/tevissaur" target="blank" class="rounded-circle circle mt-3 mb-2"
+                id="nav-circle-git">
+                <i class="bi-github"></i>
+            </a>
+            <div class="rounded-circle main-circle mt-3 mb-2" id="nav-circle-0">
+
+            </div>
+            <a href="https://www.linkedin.com/in/tevis-reilly-34014147/" target="blank"
+                class="rounded-circle circle mt-3 mb-2" id="nav-circle-linked">
+                <i class="bi-linkedin"></i>
+            </a>
 
         </div>
         <div class="container justify-content-center col-12 col-lg-8" id="link-container">
@@ -48,77 +53,93 @@
         <!-- <div id="expand-menu">&#8616;</div> -->
     </nav>
     <main class="row justify-content-center mx-0">
-        <h1 class="text-center col-12 h1 fw-bold mb-5">Hello, I'm Tevis</h1>
-        
-        <section class="row justify-content-center mt-5" id="bio">
+        <!-- <h1 class="text-center col-12 h1 fw-bold mb-5">Hello, I'm Tevis</h1> -->
+
+        <section class="row justify-content-center p-0 mt-5" id="bio">
             <div class="text-center col-12 row justify-content-center">
-                <h2 class="rounded-3 text-center col-5 col-md-4 col-lg-2 p-2 h1" id="bio-title">
+                <h2 class="rounded-3 text-center col-10 col-md-4 col-lg-4 p-2" id="bio-title">
                     about me
                 </h2>
             </div>
-            <div class="col-12 justify-content-center">
+            <div class="col-12 p-0 justify-content-center">
                 <div class="rounded-circle col-5 m-auto mt-5" id="bio-pic"></div>
-                
-                <p class="col-11 col-lg-5 rounded-3 p-3 my-5" id="bio-content">
+
+                <p class="col-11 col-lg-7 rounded-3 p-3 my-5" id="bio-content">
                     I am currently a student of web development. I have made a few things with HTML and CSS, and am
-                        just now working my way into JS. I enjoy playing with colors and layouts, and creating visually
-                        appealing websites. I enjoy the outdoors, Dungeons and Dragons, and video games. I let these interests inspire my design choices, and my project choices.
+                    just now working my way into JS. I enjoy playing with colors and layouts, and creating visually
+                    appealing websites. I enjoy the outdoors, Dungeons and Dragons, and video games. I let these
+                    interests inspire my design choices, and my project choices.
                 </p>
-                <div class="myCarousel">
-                    <figure>
-                        <img src="./assets/images/CSS3_logo.svg" alt="">
-                        <img src="./assets/images/HTML5_Badge.svg" alt="">
-                        <img src="./assets/images/Node.js_logo.svg" alt="">
-                        <img src="./assets/images/js_logo.svg" alt="">
-                        <img src="./assets/images/Python-logo-notext.svg" alt="">
-                        <img src="./assets/images/MySQL_textlogo.svg" alt="">
-                    </figure>
-                    <nav>
-                        <button class="nav prev">Prev</button>
-                        <button class="nav next">Next</button>
-                    </nav>
-                </div>
 
         </section>
-        <section class="row justify-content-center mt-5" id="work">
+        <section>
+            <div class="myCarousel">
+                <h2 class="rounded-3 text-center col-10 col-md-4 col-lg-4 p-2 my-5" id="skills-title">
+                    tech i use
+                </h2>
+                <figure>
+                    <img src="./assets/images/CSS3_logo.svg" alt="">
+                    <img src="./assets/images/HTML5_Badge.svg" alt="">
+                    <img src="./assets/images/Node.js_logo.svg" alt="">
+                    <img src="./assets/images/js_logo.svg" alt="">
+                    <img src="./assets/images/Python-logo-notext.svg" alt="">
+                    <img src="./assets/images/MySQL_textlogo.svg" alt="">
+                    <img src="./assets/images/Bootstrap_logo.svg" alt="">
+                </figure>
+                <nav>
+                    <button class="nav prev">Prev</button>
+                    <button class="nav next">Next</button>
+                </nav>
+            </div>
+
+        </section>
+        <section class="row justify-content-center p-0 mt-5" id="work">
             <div class="text-center col-12 row justify-content-center">
-                <h3 class="rounded-3 col-5 col-md-4 col-lg-2 p-2 h1" id="work-title">
+                <h3 class="rounded-3 col-10 col-md-4 col-lg-4 p-2" id="work-title">
                     my work
                 </h3>
             </div>
-            <section class="row flex-md-row flex-column work-container">
+            <section class="row flex-lg-row flex-column work-container text-center">
                 <div class="position-absolute" id="work-shape">
-
                 </div>
                 <div class="rounded-circle work-content" id="work-net-grill">
+                    <a href="https://github.com/AlexanderLeino/Netflix-and-Grill" target="blank"
+                        class="repo"><span>repo</span></a>
+                    <a href="https://alexanderleino.github.io/Netflix-and-Grill/" target="blank"
+                        class="demo"><span>demo</span></a>
 
                 </div>
                 <div class="rounded-circle work-content" id="work-forene">
+                    <a href="https://github.com/tevissaur/forene-wiki" target="blank" class="repo"><span>repo</span></a>
+                    <a href="https://tevissaur.github.io/forene-wiki/" target="blank" class="demo"><span>demo</span></a>
 
                 </div>
                 <div class="rounded-circle work-content-last mb-5" id="work-ttt">
+                    <a href="" target="blank" class="repo"><span>repo</span></a>
+                    <a href="" target="blank" class="demo"><span>demo</span></a>
 
                 </div>
                 </div>
             </section>
             <section class="row justify-content-center mt-5" id="contact">
                 <div class="text-center col-12 row justify-content-center">
-                    <h4 class="rounded-3 text-center col-5 col-md-4 col-lg-2 p-2 h1" id="contact-title">
+                    <h4 class="rounded-3 text-center col-10 col-md-4 col-lg-4 p-2" id="contact-title">
                         contact me
                     </h4>
 
                 </div>
-                <div class="col-12 col-sm-10 col-lg-6 rounded-3 text-start mx-0 my-5" id="contact-form-container">
-                    <form class="pt-2 pb-5" action="mailto:tevisreilly1@gmail.com" method="GET">
+                <div class="col-12 col-sm-10 col-lg-8 rounded-3 text-start mx-0 my-5" id="contact-form-container">
+                    <form class="pt-2 pb-5 px-2" action="mailto:tevisreilly1@gmail.com" method="GET">
                         <label class="p-2" for="sender-name">
                             Your name:
                         </label>
-                        <input class="w-100 p-1" type="text" name="sender-name" id="sender-name" required />
+                        <input class="w-100 px-2 py-1" type="text" name="sender-name" id="sender-name" required
+                            placeholder="John Doe..." />
                         <label class="p-2" for="message-content">
                             Your Message:
                         </label>
-                        <textarea class="w-100 p-3" name="message-content" id="message-content" cols="30"
-                            rows="10"></textarea>
+                        <textarea class="w-100 p-2" name="message-content" id="message-content" cols="30" rows="5"
+                            placeholder="This website is awesome!"></textarea>
                         <button class="btn btn-dark">Send Message</button>
                     </form>
                 </div>
@@ -131,7 +152,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script> -->
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!-- <script src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script> -->
     <script src="./assets/script.js"></script>
 </body>
