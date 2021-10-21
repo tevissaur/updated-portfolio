@@ -12,9 +12,9 @@ body {
 
 // Carousel configuration parameters
 $n: 7;
-$item-width: 400px;
-$item-separation: 20px;
-$viewer-distance: 5000px;
+$item-width: 300px;
+$item-separation: 80px;
+$viewer-distance: 2500px;
 
 // Derived variables
 $theta: 2 * 3.141592653589793 / $n;
@@ -42,11 +42,11 @@ $apothem: 482.842712474619px;
     img {
       width: 100%;
       height: 100%;
-      backface-visibility: hidden;
+      // backface-visibility: hidden;
       border-radius: 10px;
       border: 2px solid black;
       box-sizing: border-box;
-      padding: 5px $item-separation / 2;
+      padding: 5px $item-separation / 3;
       background-color: wheat;
       &:not(:first-of-type) {
         position: absolute;

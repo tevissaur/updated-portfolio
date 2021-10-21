@@ -19,8 +19,8 @@ body {
 .myCarousel {
   padding: 20px;
   margin-bottom: 10vh;
-  -webkit-perspective: 5000px;
-          perspective: 5000px;
+  -webkit-perspective: 2500px;
+          perspective: 2500px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +42,7 @@ body {
 
 .myCarousel figure {
   margin: 0;
-  width: 400px;
+  width: 300px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.5s;
@@ -56,13 +56,11 @@ body {
 .myCarousel figure img {
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   border-radius: 10px;
   border: 2px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 5px 10px;
+  padding: 5px 26.66667px;
   background-color: wheat;
 }
 
