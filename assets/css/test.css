@@ -73,33 +73,38 @@ body {
 }
 
 .myCarousel figure img:nth-child(2) {
-  -webkit-transform: rotateY(0.8976rad);
-          transform: rotateY(0.8976rad);
+  -webkit-transform: rotateY(0.7854rad);
+          transform: rotateY(0.7854rad);
 }
 
 .myCarousel figure img:nth-child(3) {
-  -webkit-transform: rotateY(1.7952rad);
-          transform: rotateY(1.7952rad);
+  -webkit-transform: rotateY(1.5708rad);
+          transform: rotateY(1.5708rad);
 }
 
 .myCarousel figure img:nth-child(4) {
-  -webkit-transform: rotateY(2.69279rad);
-          transform: rotateY(2.69279rad);
+  -webkit-transform: rotateY(2.35619rad);
+          transform: rotateY(2.35619rad);
 }
 
 .myCarousel figure img:nth-child(5) {
-  -webkit-transform: rotateY(3.59039rad);
-          transform: rotateY(3.59039rad);
+  -webkit-transform: rotateY(3.14159rad);
+          transform: rotateY(3.14159rad);
 }
 
 .myCarousel figure img:nth-child(6) {
-  -webkit-transform: rotateY(4.48799rad);
-          transform: rotateY(4.48799rad);
+  -webkit-transform: rotateY(3.92699rad);
+          transform: rotateY(3.92699rad);
 }
 
 .myCarousel figure img:nth-child(7) {
-  -webkit-transform: rotateY(5.38559rad);
-          transform: rotateY(5.38559rad);
+  -webkit-transform: rotateY(4.71239rad);
+          transform: rotateY(4.71239rad);
+}
+
+.myCarousel figure img:nth-child(8) {
+  -webkit-transform: rotateY(5.49779rad);
+          transform: rotateY(5.49779rad);
 }
 
 .myCarousel nav {
@@ -129,8 +134,8 @@ body {
   .myCarousel {
     padding: 20px;
     margin-bottom: 10vh;
-    -webkit-perspective: 5000px;
-            perspective: 5000px;
+    -webkit-perspective: 2500px;
+            perspective: 2500px;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -179,28 +184,32 @@ body {
             transform-origin: 50% 50% -482.84271px;
   }
   .myCarousel figure img:nth-child(2) {
-    -webkit-transform: rotateY(0.8976rad);
-            transform: rotateY(0.8976rad);
+    -webkit-transform: rotateY(0.7854rad);
+            transform: rotateY(0.7854rad);
   }
   .myCarousel figure img:nth-child(3) {
-    -webkit-transform: rotateY(1.7952rad);
-            transform: rotateY(1.7952rad);
+    -webkit-transform: rotateY(1.5708rad);
+            transform: rotateY(1.5708rad);
   }
   .myCarousel figure img:nth-child(4) {
-    -webkit-transform: rotateY(2.69279rad);
-            transform: rotateY(2.69279rad);
+    -webkit-transform: rotateY(2.35619rad);
+            transform: rotateY(2.35619rad);
   }
   .myCarousel figure img:nth-child(5) {
-    -webkit-transform: rotateY(3.59039rad);
-            transform: rotateY(3.59039rad);
+    -webkit-transform: rotateY(3.14159rad);
+            transform: rotateY(3.14159rad);
   }
   .myCarousel figure img:nth-child(6) {
-    -webkit-transform: rotateY(4.48799rad);
-            transform: rotateY(4.48799rad);
+    -webkit-transform: rotateY(3.92699rad);
+            transform: rotateY(3.92699rad);
   }
   .myCarousel figure img:nth-child(7) {
-    -webkit-transform: rotateY(5.38559rad);
-            transform: rotateY(5.38559rad);
+    -webkit-transform: rotateY(4.71239rad);
+            transform: rotateY(4.71239rad);
+  }
+  .myCarousel figure img:nth-child(8) {
+    -webkit-transform: rotateY(5.49779rad);
+            transform: rotateY(5.49779rad);
   }
   .myCarousel nav {
     display: -webkit-box;

@@ -11,7 +11,7 @@ body {
 }
 
 // Carousel configuration parameters
-$n: 7;
+$n: 8;
 $item-width: 300px;
 $item-separation: 80px;
 $viewer-distance: 2500px;
@@ -82,10 +82,10 @@ $apothem: 482.842712474619px;
 }
 
 @media screen and (max-width: 767px) {
-  $n: 7;
+  $n: 8;
   $item-width: 300px;
   $item-separation: 10px;
-  $viewer-distance: 5000px;
+  $viewer-distance: 2500px;
 
   // Derived variables
   $theta: 2 * 3.141592653589793 / $n;
