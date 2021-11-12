@@ -68,7 +68,7 @@ main {
     background-image: url('../images/lion.svg');
     background-position: center;
     background-size: cover;
-    box-shadow: 0px 0px 100px var(--gamboge), 50px 50px 100px var(--peach-orange), -50px 50px 100px var(--peach-orange);
+    box-shadow: 0px 0px 100px var(--gamboge), 50px 50px 150px var(--peach-orange), -50px 50px 150px var(--peach-orange);
     z-index: 1;
     transition: all 1s;
 }
@@ -125,11 +125,34 @@ main {
 }
 
 .hidden {
+    display: none;
     opacity: 0;
     font-size: 0;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
+#socials {
+    max-width: min-content;
+    max-height: min-content;
+    z-index: 9999;
+}
+
+
+#socials > a, #socials > button {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    color: var(--content-background-color);
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: var(--ruby-red);
+    display: flex;
+    justify-content: center;
+}
+
+#socials-git:hover, #socials-pdf:hover , #socials-linked:hover, #socials-reveal:hover {
+    color: var(--medium-champagne);
+}
 
 #bio-title, #work-title, #contact-title, #skills-title {
     position: relative;
@@ -332,6 +355,7 @@ a.repo:hover, a.demo:hover {
     background-size: cover;
     margin: 2rem auto 3rem auto;
 }
+
 .work-row-two::before {
     content: '';
     background: black;
@@ -350,7 +374,7 @@ a.repo:hover, a.demo:hover {
     text-align: center;
     padding: 1rem;
     background-color: var(--gamboge);
-    box-shadow: 0px 0px 100px var(--medium-champagne);
+    box-shadow: 0px 0px 100px var(--gamboge);
 }
 #nav-circle-git>i, #nav-circle-linked>i {
     margin: auto auto;
